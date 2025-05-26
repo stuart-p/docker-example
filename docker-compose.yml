@@ -1,0 +1,27 @@
+version: '3.9'
+
+services:
+  api:
+    build:
+      context: ./api
+    image: docker-one
+    container_name: docker-one
+    ports:
+      - '${PORT:-3000}:3000'
+    env_file:
+      - ./api/.env
+    depends_on:
+      - db
+
+  db:
+    image: postgres:16
+    container_name: db
+    ports:
+      - '5432:5432'
+    env_file:
+      - .env
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
