@@ -12,8 +12,8 @@ This repository contains a basic example of a Dockerised Express server using `d
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/docker-one.git
-   cd docker-one
+   git clone https://github.com/stuart-p/docker-example.git
+   cd docker-example
    ```
 
 2. Build and start the containers:
