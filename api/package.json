@@ -1,8 +1,7 @@
 {
-  "name": "docker-one",
+  "name": "docker-example",
   "version": "1.0.0",
   "main": "src/server.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist/server.js",
@@ -13,16 +12,16 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "dotenv": "^16.5.0",
-    "express": "^5.1.0",
-    "pg": "^8.16.0"
+    "dotenv": "16.5.0",
+    "express": "5.1.0",
+    "pg": "8.16.0"
   },
   "devDependencies": {
-    "@types/dotenv": "^6.1.1",
-    "@types/express": "^5.0.2",
-    "@types/node": "^22.15.21",
-    "@types/pg": "^8.15.2",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.8.3"
+    "@types/dotenv": "6.1.1",
+    "@types/express": "5.0.2",
+    "@types/node": "22.15.21",
+    "@types/pg": "8.15.2",
+    "ts-node": "10.9.2",
+    "typescript": "5.8.3"
   }
 }
